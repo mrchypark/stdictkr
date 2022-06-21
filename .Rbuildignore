@@ -1,3 +1,5 @@
+^renv$
+^renv\.lock$
 ^stdictapi\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
