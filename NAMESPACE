@@ -2,6 +2,7 @@
 
 export("%>%")
 export(std_search)
+export(std_view)
 importFrom(httr,GET)
 importFrom(httr,content)
 importFrom(httr,status_code)
