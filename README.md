@@ -19,7 +19,7 @@ devtools::install_github("mrchypark/stdictapi")
 
 ### Set API Key
 
-you need set `{env: STDICT_KEY}` for api key from <https://stdict.korean.go.kr/openapi>.
+you need set `{env: STDICT_KEY}` for api key from <https://stdict.korean.go.kr/openapi/openApiRegister.do>.
 
 ### Search API
 
