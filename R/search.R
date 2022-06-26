@@ -9,10 +9,11 @@
 #' @importFrom urltools param_set
 #' @importFrom httr GET status_code content
 #' @importFrom jsonlite fromJSON
+#' @importFrom keyring key_get
 #' @export
 std_search <- function(query, start = 1, count = 10) {
   "https://stdict.korean.go.kr/api/search.do" %>%
-    urltools::param_set("key", Sys.getenv("STDICT_API")) %>%
+    urltools::param_set("key", std_key()) %>%
     urltools::param_set("q", query) %>%
     urltools::param_set("req_type", "json") %>%
     urltools::param_set("start", start) %>%

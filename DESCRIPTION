@@ -15,7 +15,10 @@ URL: https://github.com/mrchypark/stdictapi
 BugReports: https://github.com/mrchypark/stdictapi/issues
 Imports: 
     httr,
+    jsonlite,
+    keyring,
     magrittr,
+    rvest,
     urltools
 Suggests:
     testthat (>= 3.0.0),
