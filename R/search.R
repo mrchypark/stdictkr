@@ -13,7 +13,7 @@
 #' @export
 std_search <- function(query, start = 1, count = 10) {
   "https://stdict.korean.go.kr/api/search.do" %>%
-    urltools::param_set("key", keyring::key_get("stdictapi")) %>%
+    urltools::param_set("key", std_key()) %>%
     urltools::param_set("q", query) %>%
     urltools::param_set("req_type", "json") %>%
     urltools::param_set("start", start) %>%

@@ -13,7 +13,7 @@
 std_view <- function(query, method = "word_info") {
   method <- match.arg(method, choices = c("word_info", "target_code"))
   "https://stdict.korean.go.kr/api/view.do" %>%
-    urltools::param_set("key", keyring::key_get("stdictapi")) %>%
+    urltools::param_set("key", std_key()) %>%
     urltools::param_set("q", query) %>%
     urltools::param_set("req_type", "json") %>%
     urltools::param_set("type_search", "view") %>%
