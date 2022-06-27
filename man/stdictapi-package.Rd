@@ -4,14 +4,16 @@
 \name{stdictapi-package}
 \alias{stdictapi}
 \alias{stdictapi-package}
-\title{stdictapi: What the Package Does (One Line, Title Case)}
+\title{stdictapi: Data Package using Korean Standard Dictionary}
 \description{
-What the package does (one paragraph).
+\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+
+stdictapi is a client package that uses the API provided by the Korean standard dictionary<https://stdict.korean.go.kr/openapi/openApiInfo.do>. You can also directly download a dictionary and use it as a tibble data type.
 }
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/mrchypark/stdictapi}
+  \item \url{https://mrchypark.github.io/stdictapi/}
   \item Report bugs at \url{https://github.com/mrchypark/stdictapi/issues}
 }
 
