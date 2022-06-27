@@ -42,3 +42,7 @@ This is a basic example which shows you how to solve a common problem:
 library(stdictapi)
 std_view("나무1")
 ```
+
+### License
+
+All credit about data and logo is from [국립국어원 표준국어대사전](https://stdict.korean.go.kr/main/main.do) under [cc-by-sa 2.0 kr](https://creativecommons.org/licenses/by-sa/2.0/kr/).
