@@ -1,22 +1,22 @@
 
-# stdictapi [<img src="man/figures/logo.png" align="right" height=140/>](https://mrchypark.github.io/stdictapi/index.html)
+# stdictkr [<img src="man/figures/logo.png" align="right" height=140/>](https://mrchypark.github.io/stdictkr/index.html)
 
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of stdictapi is to provide client package for <https://stdict.korean.go.kr/openapi>.
+The goal of stdictkr is to provide client package for <https://stdict.korean.go.kr/openapi>.
 
 ## Installation
 
 Installation
-You can install the stdictapi with:
+You can install the stdictkr with:
 
 ```
 # CRAN NOT YET!!!
-install.packages("stdictapi")
+install.packages("stdictkr")
 
 # Dev version
-install.packages("stdictapi", repos = 'https://mrchypark.r-universe.dev')
+install.packages("stdictkr", repos = 'https://mrchypark.r-universe.dev')
 ```
 
 ## How to USE
@@ -30,7 +30,7 @@ you need set api key from <https://stdict.korean.go.kr/openapi/openApiRegister.d
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(stdictapi)
+library(stdictkr)
 std_search("얼굴")
 ```
 
@@ -39,7 +39,7 @@ std_search("얼굴")
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
-library(stdictapi)
+library(stdictkr)
 std_view("나무1")
 ```
 

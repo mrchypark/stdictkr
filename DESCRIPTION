@@ -1,4 +1,4 @@
-Package: stdictapi
+Package: stdictkr
 Title: Data Package using Korean Standard Dictionary
 Version: 0.0.0.9000
 Authors@R: person(given = "Chanyub",
@@ -6,15 +6,15 @@ Authors@R: person(given = "Chanyub",
              role = c("aut","cre"),
              email = "mrchypark@gmail.com",
              comment = c(ORCID = "0000-0001-6474-2570"))
-Description: stdictapi is a client package that uses the API provided by 
-        the Korean standard dictionary<https://stdict.korean.go.kr/openapi/openApiInfo.do>.
+Description: stdictkr is a client package that uses the API provided by 
+        'the Korean standard dictionary' <https://stdict.korean.go.kr/openapi/openApiInfo.do>.
         You can also directly download a dictionary and use it as a tibble data type.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.2
-URL: https://mrchypark.github.io/stdictapi/
-BugReports: https://github.com/mrchypark/stdictapi/issues
+URL: https://mrchypark.github.io/stdictkr/
+BugReports: https://github.com/mrchypark/stdictkr/issues
 Imports: 
     httr,
     jsonlite,
