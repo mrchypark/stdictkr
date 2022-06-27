@@ -1,5 +1,5 @@
 
-# stdictapi
+# stdictapi [<img src="man/figures/logo.png" align="right" height=140/>](https://mrchypark.github.io/stdictapi/index.html)
 
 <!-- badges: start -->
 <!-- badges: end -->
