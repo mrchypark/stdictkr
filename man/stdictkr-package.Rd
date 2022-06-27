@@ -6,9 +6,9 @@
 \alias{stdictkr-package}
 \title{stdictkr: Data Package using Korean Standard Dictionary}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
-stdictkr is a client package that uses the API provided by 'the Korean standard dictionary' <https://stdict.korean.go.kr/openapi/openApiInfo.do>. You can also directly download a dictionary and use it as a tibble data type.
+stdictkr is a client package that uses the API provided by 'the Korean standard dictionary' \url{https://stdict.korean.go.kr/openapi/openApiInfo.do}. You can also directly download a dictionary and use it as a tibble data type.
 }
 \seealso{
 Useful links:

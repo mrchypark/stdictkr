@@ -12,7 +12,7 @@ Description: stdictkr is a client package that uses the API provided by
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.0
 URL: https://mrchypark.github.io/stdictkr/
 BugReports: https://github.com/mrchypark/stdictkr/issues
 Imports: 
