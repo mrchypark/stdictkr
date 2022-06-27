@@ -1,6 +1,6 @@
 #' Set API Key on stdict
 #'
-#' @importFrom keyring key_set_with_value
+#' @importFrom keyring key_set
 #' @export
 std_auth_set <- function() {
   usethis::ui_todo(
