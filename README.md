@@ -4,22 +4,26 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of stdictapi is to ...
+The goal of stdictapi is to provide client package for <https://stdict.korean.go.kr/openapi>.
 
 ## Installation
 
-You can install the development version of stdictapi from [GitHub](https://github.com/) with:
+Installation
+You can install the stdictapi with:
 
-``` r
-# install.packages("devtools")
-devtools::install_github("mrchypark/stdictapi")
+```
+# CRAN NOT YET!!!
+install.packages("stdictapi")
+
+# Dev version
+install.packages("stdictapi", repos = 'https://mrchypark.r-universe.dev')
 ```
 
 ## How to USE
 
 ### Set API Key
 
-you need set `{env: STDICT_KEY}` for api key from <https://stdict.korean.go.kr/openapi/openApiRegister.do>.
+you need set api key from <https://stdict.korean.go.kr/openapi/openApiRegister.do> using `std_auth_set()`.
 
 ### Search API
 
@@ -30,3 +34,11 @@ library(stdictapi)
 std_search("얼굴")
 ```
 
+### View API
+
+This is a basic example which shows you how to solve a common problem:
+
+``` r
+library(stdictapi)
+std_view("나무1")
+```
