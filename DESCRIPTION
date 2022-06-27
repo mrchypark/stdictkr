@@ -17,12 +17,13 @@ URL: https://mrchypark.github.io/stdictkr/
 BugReports: https://github.com/mrchypark/stdictkr/issues
 Imports: 
     httr,
-    jsonlite,
+    xml2,
     keyring,
     magrittr,
     rvest,
     urltools
 Suggests:
     testthat (>= 3.0.0),
-    usethis
+    usethis,
+    devtools
 Config/testthat/edition: 3

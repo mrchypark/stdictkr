@@ -7,7 +7,7 @@
 #'
 #' @importFrom urltools param_set
 #' @importFrom httr GET status_code content
-#' @importFrom jsonlite fromJSON
+#' @importFrom xml2 as_list
 #' @importFrom keyring key_get
 #' @export
 std_view <- function(query, method = "word_info") {
@@ -15,8 +15,7 @@ std_view <- function(query, method = "word_info") {
   "https://stdict.korean.go.kr/api/view.do" %>%
     urltools::param_set("key", std_key()) %>%
     urltools::param_set("q", query) %>%
-    urltools::param_set("req_type", "json") %>%
-    urltools::param_set("type_search", "view") %>%
+    urltools::param_set("req_type", "xml") %>%
     urltools::param_set("method", method) %>%
     httr::GET() -> resp
 
@@ -24,7 +23,7 @@ std_view <- function(query, method = "word_info") {
     return("error")
   }
 
-  httr::content(resp, "text") %>%
-    jsonlite::fromJSON() -> res
+  httr::content(resp) %>%
+    xml2::as_list() -> res
   return(res)
 }
