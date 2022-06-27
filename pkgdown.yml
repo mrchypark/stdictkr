@@ -2,8 +2,8 @@ pandoc: 2.7.3
 pkgdown: 2.0.5
 pkgdown_sha: ~
 articles: {}
-last_built: 2022-06-27T14:04Z
+last_built: 2022-06-27T14:20Z
 urls:
-  reference: https://mrchypark.github.io/stdictapi/reference
-  article: https://mrchypark.github.io/stdictapi/articles
+  reference: https://mrchypark.github.io/stdictkr/reference
+  article: https://mrchypark.github.io/stdictkr/articles
 
