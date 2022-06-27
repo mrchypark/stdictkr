@@ -1,6 +1,6 @@
 ^renv$
 ^renv\.lock$
-^stdictapi\.Rproj$
+^stdictkr\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
 ^_pkgdown\.yml$

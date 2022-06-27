@@ -1,6 +1,6 @@
 #' Set API Key on stdict
 #'
-#' @importFrom keyring key_set
+#' @importFrom keyring key_set_with_value
 #' @export
 std_auth_set <- function() {
   usethis::ui_todo(
@@ -10,7 +10,7 @@ std_auth_set <- function() {
   Sys.sleep(1)
 
   keyring::key_set(service = "apikey",
-                              username = "stdictapi")
+                              username = "stdictkr")
 }
 
 #' Remove API Key on stdict
@@ -20,7 +20,7 @@ std_auth_set <- function() {
 #' @export
 std_auth_remove <- function() {
   keyring::key_delete(service = "apikey",
-                      username = "stdictapi")
+                      username = "stdictkr")
 }
 
 #' @importFrom keyring key_get
@@ -60,5 +60,5 @@ std_auth_work <- function() {
 
 std_key <- function() {
   keyring::key_get(service = "apikey",
-                   username = "stdictapi")
+                   username = "stdictkr")
 }
