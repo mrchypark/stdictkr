@@ -12,23 +12,27 @@
 #' @export
 std_view <- function(query, method = "word_info") {
   method <- match.arg(method, choices = c("word_info", "target_code"))
-  "https://stdict.korean.go.kr/api/view.do" %>%
-    urltools::param_set("key", std_key()) %>%
-    urltools::param_set("q", query) %>%
-    urltools::param_set("req_type", "xml") %>%
-    urltools::param_set("method", method) %>%
-    httr::GET() -> resp
 
-  if (httr::status_code(resp) != 200) {
+  httr::POST(
+    "https://stdict.korean.go.kr/api/view.do",
+    body = list(
+      key = std_key(),
+      q = query,
+      req_type = "xml",
+      method = method
+    )
+  ) -> resp
+
+    if (httr::status_code(resp) != 200) {
     return("error")
   }
 
   httr::content(resp) %>%
     rvest::html_nodes("item") %>%
-    xml2::as_list() %>%
-    purrr::map(unlist) %>%
-    purrr::map(t) %>%
-    purrr::map(tibble::as_tibble, .name_repair = "unique") %>%
-    dplyr::bind_rows()
+    # xml2::as_list() %>%
+    # purrr::map(unlist) %>%
+    # purrr::map(t) %>%
+    # purrr::map(tibble::as_tibble, .name_repair = "unique") %>%
+    # dplyr::bind_rows()
     return()
 }
