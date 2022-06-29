@@ -35,7 +35,9 @@ std_dict_path_full <- function() {
   normalizePath(file.path(std_dict_path(), "dictxml.zip"), mustWork = FALSE)
 }
 
+# TODO: need to load tbl
 std_dict_load <- function() {
-  tars <- normalizePath(file.path(std_dict_path(), list.files(std_dict_path())), mustWork = FALSE)
+  tars <-
+    normalizePath(file.path(std_dict_path(), list.files(std_dict_path())), mustWork = FALSE)
   purrr::map(tars, ~ xml2::read_xml(.x) %>% rvest::html_nodes("item"))
 }
