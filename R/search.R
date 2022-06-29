@@ -23,13 +23,16 @@ std_search <- function(query,
 
   sense.type <- sup_no <- NULL
 
-  "https://stdict.korean.go.kr/api/search.do" %>%
-    urltools::param_set("key", std_key()) %>%
-    urltools::param_set("q", query) %>%
-    urltools::param_set("req_type", "xml") %>%
-    urltools::param_set("start", start) %>%
-    urltools::param_set("num", count) %>%
-    httr::GET() -> resp
+    httr::POST(
+      "https://stdict.korean.go.kr/api/search.do",
+      body = list(
+        key = std_key(),
+        q = query,
+        req_type = "xml",
+        start = start,
+        num = count
+        )
+    ) -> resp
 
   if (httr::status_code(resp) != 200) {
     return("error")
