@@ -24,6 +24,11 @@ std_view <- function(query, method = "word_info") {
   }
 
   httr::content(resp) %>%
-    xml2::as_list() -> res
-  return(res)
+    rvest::html_nodes("item") %>%
+    xml2::as_list() %>%
+    purrr::map(unlist) %>%
+    purrr::map(t) %>%
+    purrr::map(tibble::as_tibble, .name_repair = "unique") %>%
+    dplyr::bind_rows()
+    return()
 }

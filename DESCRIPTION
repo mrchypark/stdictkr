@@ -21,7 +21,10 @@ Imports:
     keyring,
     magrittr,
     rvest,
-    urltools
+    urltools,
+    purrr,
+    dplyr,
+    tibble
 Suggests:
     testthat (>= 3.0.0),
     usethis,

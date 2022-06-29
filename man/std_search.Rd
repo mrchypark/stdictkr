@@ -13,6 +13,9 @@ std_search(query, start = 1, count = 10)
 
 \item{count}{count of result number}
 }
+\value{
+a \link[tibble:tibble-package]{tibble}
+}
 \description{
 stdict korean api can use search api
 }

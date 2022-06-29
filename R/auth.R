@@ -3,14 +3,12 @@
 #' @importFrom keyring key_set
 #' @export
 std_auth_set <- function() {
-  usethis::ui_todo(
-    "Your API Key is at {usethis::ui_value('https://stdict.korean.go.kr/openapi/openApiRegister.do')}"
-  )
+  view_url("https://stdict.korean.go.kr/openapi/openApiRegister.do")
 
   Sys.sleep(1)
 
   keyring::key_set(service = "apikey",
-                              username = "stdictkr")
+                   username = "stdictkr")
 }
 
 #' Remove API Key on stdict
